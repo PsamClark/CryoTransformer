@@ -35,7 +35,7 @@ def get_args_parser():
     parser.add_argument('--data_path', default='train_val_test_data', help='Path to the training dataset')
     
     # Output and resume paths
-    parser.add_argument('--resume', default='pretrained_model/detr_r101_dc5.pth', help='Path to the pretrained model checkpoint')
+    parser.add_argument('--resume', default=None, help='Path to the pretrained model checkpoint')
 
 
     parser.add_argument('--lr', default=1e-4, type=float)

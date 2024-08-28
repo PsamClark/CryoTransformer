@@ -157,8 +157,8 @@ def build(image_set, args):
     assert root.exists(), f'provided micrograph path {root} does not exist'
     mode = 'instances'
     PATHS = {
-        "train": (root / "train", root / "annotations" / f'{mode}_train.json'),
-        "val": (root / "val", root / "annotations" / f'{mode}_val.json'),
+        "train": (root / "images", root / "annotations" / f'{mode}_train.json'),
+        "val": (root / "images", root / "annotations" / f'{mode}_val.json'),
     }
 
     img_folder, ann_file = PATHS[image_set]
